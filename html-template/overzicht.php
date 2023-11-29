@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <form 
+  <form>
 
   <div class="container">
     <div class="d-flex justify-content-center align-items-center m-4">
@@ -50,15 +50,18 @@
             </div>
             <div class="d-flex justify-content-between align-items-center mt-3">
               <div class="btn-group">
+                <a href="detail.php?id=<?php echo $v["id"]; ?>">
                 <button type="button" class="btn btn-sm btn-outline-secondary">
                   View
-                </button>
+                </button></a>
+                <a href="edit.php">
                 <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Edit
-                </button>
+                  Edit 
+                </button></a> 
+                <a href="delete.php">
                 <button type="button" class="btn btn-sm btn-outline-secondary">
                   Delete
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
